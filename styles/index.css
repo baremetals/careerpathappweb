@@ -1,0 +1,102 @@
+header {
+    background-color: #fff;
+}
+
+
+element.style {
+}
+header {
+    background-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+header {
+    display: block;
+}
+body {
+    font-family: Poppins,Zen Kaku Gothic New,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #f9f9fb;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header .row {
+    min-height: 90;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    justify-self: flex-start;
+    margin-left: 0px;
+}
+
+
+a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+a:hover {
+    color: #7755E2;
+}
+
+.loginbtn {
+    min-height: 47px;
+    display: flex;
+    align-items: center;
+    min-width: 133px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background: transparent;
+    font: inherit;
+}
+
+.registerbtn {
+    min-height: 47px;
+    display: flex;
+    align-items: center;
+    min-width: 133px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background: #7755e2;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s;
+    font: inherit;
+}

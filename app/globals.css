@@ -3,25 +3,143 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #ffffff;
+  --foreground: #f3f3f3;
+  --text1: #33383c;
+  --text2: #8e9193;
+  --placeholder: #f6f6f6;
+  --primary: #f7542e;
+  --primary-dark: #d83d1b;
+  --success: #7fc98e;
+  --video: #082136da;
+  --highlighted: #fef5f3;
+  --white: #fff;
+  --course-primer: #00b894;
+  --course-beginner: #fdcb6e;
+  --course-intermediate: #6c5ce7;
+  --course-advance: #f7542e;
+  --rating-star: #9CD499;
+  --fill-star: #F6B500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Encode Sans Expanded', sans-serif; */
+  /* font-family: 'Zen Kaku Gothic New', sans-serif; */
+  /* font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Poppins', "Zen Kaku Gothic New", sans-serif;
+  -webkit-font-smoothing: antialiased;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     background-color: #F9F9FB;
+     overflow-x: hidden;
+}
+
+html, body {
+     height: 100%;
+}
+
+ img, picture, video, canvas, svg {
+     display: block;
+     max-width: 100%;
+}
+ input, button, textarea, select {
+     font: inherit;
+}
+ p, h1, h2, h3, h4, h5, h6 {
+     overflow-wrap: break-word;
+}
+
+ img {
+     max-width: 100%;
+}
+
+footer {
+     background: #101522;
+     padding: 80px 0 68px;
+}
+
+ input {
+     background: #FFFFFF;
+     border: 1px solid #DCDCDC;
+     border-radius: 5px;
+     padding: 4px;
+}
+ input:focus {
+     outline: none;
+}
+
+ a {
+     text-decoration: none;
+}
+ ul, li {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AFAFAF;
+  opacity: 1; /* Firefox */
+  font-weight: 400;
+font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #AFAFAF;
+  font-weight: 400;
+font-size: 14px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #AFAFAF;
+  font-weight: 400;
+font-size: 14px;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+  background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #b2b2b2;
+}
+
+.rdw-editor-wrapper {
+  background-color: #fff;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
 }
