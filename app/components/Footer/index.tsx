@@ -8,3 +8,4 @@ export default function Footer() {
     <footer style={{ background: "#101522", padding: "80px 0 68px" }}>Footer</footer>
   )
 }
+  
